@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body 
+{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80% 20%;
+}
+
+.left-side 
+{
+    grid-column: 0;
+    height: 1vh;
+}
+
+input {
+    display: block;
+}
+
+#inp {
+    width: 100%;
+    outline: none;
+    grid-row: 1;
+    padding-bottom: 80%;
+}
+
+#submit {
+    width: 100%;
+    grid-row: 2;
+    background-color: #00cc66;
+    height: 40px;
+}
+
+.right-side 
+{
+    background-color: antiquewhite;
+    border: solid 1px;
+    grid-row: span 2;
+}
